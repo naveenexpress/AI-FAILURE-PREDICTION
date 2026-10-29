@@ -1,0 +1,63 @@
+{
+  "model_name": "RandomForest_EquipmentFailurePredictor",
+  "algorithm": "Random Forest Classifier (Scikit-Learn)",
+  "version": "1.0.0",
+  "trained_at": "2026-10-28T13:18:49.492861+00:00",
+  "random_seed": 42,
+  "n_samples": 3000,
+  "train_size": 2400,
+  "test_size": 600,
+  "features": [
+    "temperature",
+    "vibration",
+    "rotational_speed",
+    "pressure",
+    "operating_hours"
+  ],
+  "classes": [
+    "NORMAL",
+    "WARNING",
+    "HIGH RISK"
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_macro": 1.0,
+    "recall_weighted": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0
+  },
+  "confusion_matrix": [
+    [
+      330,
+      0,
+      0
+    ],
+    [
+      0,
+      168,
+      0
+    ],
+    [
+      0,
+      0,
+      102
+    ]
+  ],
+  "feature_importances": {
+    "temperature": 0.386,
+    "vibration": 0.3753,
+    "rotational_speed": 0.0024,
+    "pressure": 0.0926,
+    "operating_hours": 0.1437
+  },
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 12,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "criterion": "gini"
+  },
+  "limitations": "This model was trained on synthetic engineering simulation data with fixed random seeds for demonstration and educational purposes. Class probabilities reflect simulated risk estimates and must not be treated as certified real-world physical failure probabilities without calibrating against domain-specific vibration spectra and equipment telemetry."
+}

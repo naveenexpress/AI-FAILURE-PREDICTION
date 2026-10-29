@@ -1,0 +1,1 @@
+dc8f1e92907d88e3ada4ae487e08674dda89641b679edb16233bbb21700fde93  frontend-dist-v1.0.0.zip
